@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5401bd2bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Abhijna</span><br> from Bangalore</h1>
+            </div>
+        </div>  
+    </div>
+    
+    <!---------About Me----------->
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2024-10-18 at 1.32.31 PM.jpeg" width="500" height="500">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a passionate and driven software developer with a Master's degree in Computer Applications from Dr. Ambedkar Institute of Technology, Bangalore. Skilled in both frontend and backend technologies, including HTML, CSS, JavaScript, Bootstrap, Core Java, Spring Boot, and MySQL, I have developed dynamic, user-friendly web applications. My academic projects, such as an Event Management System and PetHub, have sharpened my ability to build real-world solutions. I also have experience in machine learning, demonstrated through my Fake Account Detection project using Naïve Bayes and k-Nearest Neighbours to enhance online security. Eager to contribute to a dynamic team, I am always seeking opportunities to learn and grow both personally and professionally.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend technologies</span><br>Html, Css, Js</li>
+                            <li><span>Backend technologies</span><br>Core java, JDBC, Java8, Spring, Spring boot</li>
+                            <li><span>Databse technologies</span><br>MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Master of Computer Application</span><br>Dr.Ambedkar Institute of technology, Bangalore (2021-2023)<br>9.01 CGPA</li>
+                            <li><span>Bachelor of Science</span><br>DVS College of Arts and Science, Shivamogga (2018-2021)<br>82.5%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div></p>
+    </div>
+
+    <!------Portfolio----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="images/EventManagement.jpeg" alt="eventmanagement">
+                    <div class="layer">
+                        <h3>Event Management website</h3>
+                        <p>It is online based Event Booking Application for 
+                            End Users/Customers. Customers can register, login and Book 
+                            their Events . They can select the event and can book events 
+                            with time , date and location according to their Budget.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                   
+                </div>
+
+                <div class="work">
+                    <img src="images/PetHub.jpeg" alt="PetHub">
+                    <div class="layer">
+                        <h3>PetHub</h3>
+                        <p>It is online based Pet's Product Booking Application 
+                            for End Users/Customers.Customers can register, login and 
+                            search products.They can add items to cart and payment 
+                            using different channels.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/FakeAccount.jpeg" alt="FakeAccount Detection">
+                    
+                    <div class="layer">
+                        <h3>Fake Account Detection</h3>
+                        <p>The Fake Account Detection project enhances 
+                            online security by identifying fraudulent user accounts using 
+                            machine learning algorithms like Naïve Bayes and k-Nearest 
+                            Neighbours. It integrates with platforms to proactively
+                            detect and mitigate fraudulent activities, ensuring user trust 
+                            while maintaining effectiveness through continuous 
+                            monitoring andrefinement against evolving fraud patterns.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-----------contact--------->
+    <div id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>abhijna07udupa@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9353251029</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Abhijna_V.Resume.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright&copy; Abhijna. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>
